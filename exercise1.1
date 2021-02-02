@@ -1,0 +1,28 @@
+Script started on Tue Feb  2 11:51:11 2021
+[?1034hbash-3.2$ docker container run -[K<[Knginx -d[K[K[K[K[K[K[K[K-d nginx
+f4dca68e39e4336eac364e090b5e2b85ad2519adbbbce016390a612a66a5121f
+bash-3.2$ docker container run -d nginx
+7103c512697fb39c67beae52aead96a7bec6baf29ed1e6bab604b4ef37ed076e
+bash-3.2$ docker container run -d nginx
+d33d846e1673f52e65fa94b8b0e3f8a91cb9fbb0fa4e83d43795eb3c701b9ba1
+bash-3.2$ docker container -ls[K[K[Kls
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+d33d846e1673   nginx     "/docker-entrypoint.…"   9 seconds ago    Up 8 seconds    80/tcp    wonderful_lovelace
+7103c512697f   nginx     "/docker-entrypoint.…"   10 seconds ago   Up 10 seconds   80/tcp    charming_fermat
+f4dca68e39e4   nginx     "/docker-entrypoint.…"   14 seconds ago   Up 14 seconds   80/tcp    great_shockley
+bash-3.2$ docker conta[Kt[Kainer stop d33d
+d33d
+bash-3.2$ docker container stop d33d[K[K[K[K7103
+7103
+bash-3.2$ docker container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+f4dca68e39e4   nginx     "/docker-entrypoint.…"   48 seconds ago   Up 48 seconds   80/tcp    great_shockley
+bash-3.2$ docker container ls -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
+d33d846e1673   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 31 seconds ago             wonderful_lovelace
+7103c512697f   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 21 seconds ago             charming_fermat
+f4dca68e39e4   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    great_shockley
+bash-3.2$ do[K[Kexit
+exit
+
+Script done on Tue Feb  2 11:52:56 2021

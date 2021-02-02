@@ -1,0 +1,47 @@
+Script started on Tue Feb  2 11:59:13 2021
+[?1034hbash-3.2$ docker pr[K[Ksystem prune -all
+unknown shorthand flag: 'l' in -ll
+See 'docker system prune --help'.
+bash-3.2$ docker system prune -all[K[K[K-all
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+untagged: docker101tutorial:latest
+deleted: sha256:c281af5a6491b58dd2e2e907715c3c7b676c23a382db97096678ce336bdc7434
+untagged: alpine/git:latest
+untagged: alpine/git@sha256:23618034b0be9205d9cc0846eb711b12ba4c9b468efdd8a59aac1d7b1a23363f
+deleted: sha256:ed0ba0fc65856e09fe6665c74f89cb56c9f8bc7eb64cfad5511063c9041d1b54
+deleted: sha256:120135a6675d073880234306548632483c1716f3c7459ba494bb75ba1b7b864b
+deleted: sha256:e49fedbe12124db8589caba7ac0c285c108de5dbc78aeb21820a05f8ba4c4992
+untagged: nginx:latest
+untagged: nginx@sha256:10b8cc432d56da8b61b070f4c7d2543a9ed17c2b23010b43af434fd40e2ca4aa
+deleted: sha256:f6d0b4767a6c466c178bf718f99bea0d3742b26679081e52dbf8e0c7c4c42d74
+deleted: sha256:4dfe71c4470c5920135f00af483556b09911b72547113512d36dc29bfc5f7445
+deleted: sha256:3c90a0917c79b758d74b7040f62d17a7680cd14077f734330b1994a2985283b8
+deleted: sha256:a1c538085c6f891424160d8db120ea093d4dda393e94cd4713e3fff3c82299b5
+deleted: sha256:a3ee2510dcf02c980d7aff635909612006fd1662084d6225e52e769b984abeb5
+deleted: sha256:cb42413394c4059335228c137fe884ff3ab8946a014014309676c25e3ac86864
+
+Deleted build cache objects:
+qlwee7w3au3atiyvm9t2kxbya
+laywj14sjt4mdfg71bh1xzs7o
+trdd6x17v42ghzgtlrv4vas29
+elk88y0s9cqlyeev3ys38wbvx
+th4z06cbuk5lnq1uibkxgbbs9
+n61ne36kftduqf8mpx3btupww
+6p9tr8y4tgiux36my5yp800d6
+
+Total reclaimed space: 161.1MB
+bash-3.2$ docker container -ls[K[K[K[K ls -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+bash-3.2$ docker container ls -a[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kimages
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+bash-3.2$ exit
+exit
+
+Script done on Tue Feb  2 11:59:48 2021

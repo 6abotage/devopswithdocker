@@ -1,0 +1,42 @@
+Script started on Tue Feb  2 16:21:44 2021
+[?1034hbash-3.2$ docker image[K[K[K[K[Kcontainer run -d -it - [K[K--name bash_exercise [K[K[K[K[K[K[K[K[K[K-exercise bash_e[K[K:exercise 
+af68267ef168ffa2449c0b0f958e944b4449bdb27021a8d013f9429da9c194bb
+bash-3.2$ docker container --at[K[K[Kattach[K[K[K[K[K[K-a[K[K[K[K ls
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS     NAMES
+af68267ef168   bash:exercise   "docker-entrypoint.s…"   15 seconds ago   Up 14 seconds             bash-exercise
+a388606987d2   ubuntu:16.04    "sh -c 'while true; …"   18 minutes ago   Up 18 minutes             looper-it
+bash-3.2$ docker container att[K[K[K-aata[K[K[Kttach [K[K[K[K[K[K[K[Kattach bash-exercise --no-stdin[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K--no-stdin bash_er[K[K[K-[K-exercise
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^Cbash-3.2$ docker container exe [Kx [K[Kc -it bash-exercise bash
+root@af68267ef168:/usr/app# tail -f ./logs.txt
+Tue, 02 Feb 2021 15:24:09 GMT
+Tue, 02 Feb 2021 15:24:12 GMT
+Secret message is:
+"Docker is easy"
+Tue, 02 Feb 2021 15:24:18 GMT
+Tue, 02 Feb 2021 15:24:21 GMT
+Tue, 02 Feb 2021 15:24:24 GMT
+Tue, 02 Feb 2021 15:24:27 GMT
+Secret message is:
+"Docker is easy"
+Tue, 02 Feb 2021 15:24:33 GMT
+Tue, 02 Feb 2021 15:24:36 GMT
+Tue, 02 Feb 2021 15:24:39 GMT
+Tue, 02 Feb 2021 15:24:42 GMT
+Secret message is:
+"Docker is easy"
+Tue, 02 Feb 2021 15:24:48 GMT
+Tue, 02 Feb 2021 15:24:51 GMT
+^C
+root@af68267ef168:/usr/app# exot  it
+exit
+bash-3.2$ exit
+exit
+
+Script done on Tue Feb  2 16:25:12 2021

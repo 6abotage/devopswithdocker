@@ -1,0 +1,150 @@
+Script started on Tue Feb  2 11:55:50 2021
+[?1034hbash-3.2$ o[Kdocker container stop fad[K[K4dc
+f4dc
+bash-3.2$ con[K[K[Kdocker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+d33d846e1673f52e65fa94b8b0e3f8a91cb9fbb0fa4e83d43795eb3c701b9ba1
+7103c512697fb39c67beae52aead96a7bec6baf29ed1e6bab604b4ef37ed076e
+f4dca68e39e4336eac364e090b5e2b85ad2519adbbbce016390a612a66a5121f
+
+Total reclaimed space: 3.342kB
+bash-3.2$ dc[Kocker c[Kimages prune
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+bash-3.2$ dockr[Ker system prune -a [K[K[K[K
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted build cache objects:
+ymc5lnwb7gsiqo31ijhl4aiqc
+7huh42jmeg0x8gr7wiinvnmhy
+k8h4p5radu84hcxrsmdq7z8g9
+wnyvb7spezyowes3pn5b9txhf
+hpnn3xtg2dvtd6fbh46w82vgo
+xzfr4pncufavedpukgx6i029p
+ychfu7qmco9xyx5k3gyz5t7st
+2s1dno3f58kbat2m5gqltt89n
+r4oco8rpnzzm4fut108zh8rc4
+qw9b0ouajp7ehfnspzu8o2jh6
+y1mmf0xom1qoe91lrwccka4ct
+oj5fw3bbylh0idyefvjuj65m8
+2nyhujumo9p2svivcrtkuq54e
+kb6zrvjbsh1e1mgxkkn0if37x
+ttw4pvb9ja44bqak0qi83enih
+bqe8tqnjg3savzoi9jsnho1e8
+amvq2cy10wztruao9r6hpa255
+onqg8k1ub19xmjpbq1gtnbkqh
+wgljfzqhja4ocwlajx41alzfy
+y2u57mwd2poewhu4ta9147ykn
+f0c1ukvqqoia1thl3ho6me61j
+eochgkc2j4agt341991ss3f99
+gfro9wplwkan848if34d9qimr
+s8wpgolblpxox4j94axms2rng
+
+Total reclaimed space: 393MB
+bash-3.2$ docker container ls -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+bash-3.2$ docker image ls
+REPOSITORY          TAG       IMAGE ID       CREATED       SIZE
+docker101tutorial   latest    c281af5a6491   13 days ago   27.7MB
+nginx               latest    f6d0b4767a6c   3 weeks ago   133MB
+alpine/git          latest    ed0ba0fc6585   6 weeks ago   28.4MB
+bash-3.2$ docker syste prune --all
+unknown flag: --all
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/Users/dino/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides
+                           DOCKER_HOST env var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default
+                           "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/Users/dino/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/Users/dino/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/Users/dino/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Build with BuildKit (Docker Inc., v0.5.1-docker)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.5.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
+
+bash-3.2$ doc[K[K[Kexit
+exit
+
+Script done on Tue Feb  2 11:58:57 2021
