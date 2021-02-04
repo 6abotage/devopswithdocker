@@ -2,6 +2,7 @@ FROM ubuntu:16.04
 
 WORKDIR /mydir 
 # WORKDIR will create and set the current working directory to /mydir after this directive
+RUN apt-get update && apt-get install -y wget 
 RUN touch hello.txt
 # will execute  command with /bin/sh -c prefix 
 # because of WORKDIR => same as RUN touch /mydir/hello.txt
